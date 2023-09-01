@@ -1,0 +1,29 @@
+Operadores Relacionais
+sempre retornam valores booleanos: TRUE ou FALSE
+
+> maior que
+< menor que
+>= maior ou igual que
+<= menor ou igual que
+== igual
+!= diferente
+
+Operador de identidade
+
+=== testa se são idênticos no mesmo valor e tipo
+!== desigual restrito 
+
+Operadores Lógicos e ordem de precedência
+! negação - NÃO - é o oposto
+&& conjunção - E - todos os resultado precisam ser verdadeiros para retornar TRUE
+|| disjunção - OU se apenas um resultado for verdadeiro será retornado TRUE
+
+Ordem de precedência
+Aritiméticos > Relacionais > Lógicos
+
+Operador Ternario
+
+teste ? TRUE : FALSE
+
+se o meu teste for verdadeiro ele vai retorna o que estiver contido depois do sinal de ?
+se o meu teste for falso ele vai retornar o que estiver contidp depois do sinal de :

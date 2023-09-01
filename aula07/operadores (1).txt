@@ -1,0 +1,28 @@
+OPRADORES
+aritiméticos
+    + soma
+    - subtração
+    * multiplicação
+    / divisão
+    % resto da divisão
+    ** potenciação
+
+Ordem de precendencia
+    da esquerda para direira 
+    1º ()
+    2º **
+    3º * / %
+    4 + -
+
+Auto-atribuição
+    var n = 3
+    n = n + 4 -> n+=4 = 7
+
+Incremento
+    x = x + 1 -> x++
+    x = x - 1 -> x--
+		
+atribuição
+relacionais
+lógicos
+ternário

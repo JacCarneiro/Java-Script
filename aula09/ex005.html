@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(35, 35, 180);
+            color: yellow;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <script>
+        /*
+            Acronimo DOM
+            Document Object Model
+            conjunto de objetos do navegador que vai dá acesso aos componetes internos do website é utilziado apenas no JavaScript ele não funciona dentro do NodeJs
+
+            Arvore DOM
+            tudo dentro do js esta dentro de algo chamado:
+            window > location > document > history
+            document > html > head > body
+
+            podemos acessar por
+            marca
+            ID
+            Nome
+            Classe
+            Seletor
+        */
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText) //var.innerText retorna o texto que esta dentro da variável
+
+    </script>
+</body>
+</html>

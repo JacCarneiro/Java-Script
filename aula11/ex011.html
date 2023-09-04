@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+     <h1>Sistema Nacionalidade</h1>
+     <p>
+        Digite onde o País que você mora <input type="text" name="pais" id="pais">
+        <input type="button" value="verificar" onclick="pais()">
+     </p>
+     <div id="res"></div>
+
+     <script>
+        function pais(){
+            var pais = window.document.getElementById('pais').value
+            var res = window.document.getElementById('res')
+            if( pais == 'Brasil'){
+                res.innerHTML = 'Você é <strong>brasileiro!</strong>'
+            } else {
+                res.innerHTML = 'Você é <strong>estrangeiro!<strong>'
+            }
+            
+        }
+     </script>
+</body>
+</html>

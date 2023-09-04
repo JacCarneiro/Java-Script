@@ -16,6 +16,7 @@
     <h1>Inciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"> Clique em mim</div>
     <script>
         /*
             Acronimo DOM
@@ -34,8 +35,16 @@
             Classe
             Seletor
         */
+        var msg = window.document.getElementById('msg')
+        msg.innerText = 'modou via JS'
+        var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('Está escrito assim: ' + p1.innerText) //var.innerText retorna o texto que esta dentro da variável
+        p1.style.color = 'black'
+        corpo.style.background = 'white'
+        var x = window.document.querySelector('div#msg')
+        x.style.color = 'red';
+        
 
     </script>
 </body>

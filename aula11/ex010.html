@@ -19,6 +19,7 @@
             var txtv = window.document.querySelector('input#txtvel')
             var resp = window.document.querySelector('div#res')
             var vel = Number(txtv.value)
+            alert(typeof(txtv))
             res.innerHTML = `<p> Sua velocidade atual é de <strong>${vel}</strong></p>`
             if (vel > 60) {
                 resp.innerHTML += `<p>você está <strong> MULTADO! </strong> por execesso de velocidade </p>`

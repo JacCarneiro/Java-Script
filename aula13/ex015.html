@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            text-align: center;
+            
+        }
+        header > h1{
+            margin: 20px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        main > div{
+            margin-bottom: 20px;
+            padding-top: 20px;
+
+        }
+        main{
+            background-color: white;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        footer {
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <header>
+        <h1 id="titulo">
+            Hora do Dia
+        </h1>
+    </header>
+    <main>
+        <div id="res">
+            Aqui vai dizer que horas são
+        </div>
+        <img src="imagens/dia.jpg" alt="imagem" id="foto">
+    </main>
+    <footer id="rodape">
+        © Ari Junior
+    </footer>
+
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var res = window.document.getElementById('res')
+        var corpo = window.document.getElementById('corpo')
+        var foto = window.document.getElementById('foto')
+        var titulo = window.document.getElementById('titulo')
+        var rodape = window.document.getElementById('rodape')
+        if(hora < 12){
+            titulo.style.color = 'black'
+            corpo.style.backgroundColor = 'rgba(245, 245, 108, 0.705)'
+            foto.src = 'imagens/dia.jpg'
+            rodape.style.color = 'black'
+        }else if (hora <= 18) {
+            titulo.style.color = 'black'
+            corpo.style.backgroundColor = 'rgba(255, 145, 0, 0.719)'
+            foto.src = 'imagens/tarde.jpg'
+            rodape.style.color = 'black'
+        } else {
+            titulo.style.color = 'white'
+            corpo.style.backgroundColor = 'rgba(0, 0, 0, 0.637)'
+            foto.src = 'imagens/noite.jpg'
+            rodape.style.color = 'white'
+        }
+        res.innerHTML = (`Agora são ${hora} horas`)
+        
+    </script>
+</body>
+</html>

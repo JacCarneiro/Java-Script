@@ -14,18 +14,18 @@
     </header>
     <main>
         
-        <label for="i">Inicio</label>
-        <input type="number" name="i" id="i"><br> 
+        <label for="inicio">Inicio</label>
+        <input type="number" name="i" id="inicio"><br> 
 
-        <label for="f">Fim</label>
-        <input type="number" name="f" id="f"><br>
+        <label for="fim">Fim</label>
+        <input type="number" name="f" id="fim"><br>
 
-        <label for="p">Passo</label>
-        <input type="number" name="p" id="p"><br>
+        <label for="passo">Passo</label>
+        <input type="number" name="p" id="passo"><br>
 
-        <input type="button" value="Contar"><br>
+        <input type="button" value="Contar" onclick="contar()"> <br>
 
-        <div>
+        <div id="res">
             Contando:
         </div>
         
@@ -33,5 +33,7 @@
     <footer id="rodape">
         © Ari Junior
     </footer>
+    
+    <script src="contagem.js"></script>
 </body>
 </html>

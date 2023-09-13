@@ -20,11 +20,11 @@ function contar(){
     }
     if (i < f){
         for(c=i; c<=f;c+=p){
-            res.innerHTML += c
+            res.innerHTML += `${c} - `
         }
     } else{
         for(c=i; c >= f;c-=p){
-            res.innerHTML += c
+            res.innerHTML += `${c} - `
         }
         }   
     }
